@@ -20,3 +20,22 @@
 # Decisiones a la hora de crear la aplicación básica
 
 - Se rechazó el autocompletado, el compartimiento de datos, la propuesta de 'zoneless' application without zone.js y el renderizado (SSR). Todo esto porque apenas estamos aprendiendo, y la mayoría de estas peticiones son para desarrolladores experimentados, especialmente con Angular.
+- Se corre el front con 'ng serve'
+
+# Paso 4 - Subir proyecto a GitHub
+
+- git init
+- git status
+- git add .
+- git commit -m "Mensaje"
+- En caso de que ya haya un repositorio, 'git remote remove origin' y poner el nuevo
+- git remote add origin https://github.com/TU_USUARIO/ControlStock.git
+- Renombrar rama master a main: 'git branch -M main'
+- Subir todo: 'git push -u origin main'
+
+# A tener en cuenta en caso de presentarse el error de la carpeta azul con flecha blanca
+
+Convertir las carpetas en directorios normales
+
+- 'git rm --cached stock-tienda': esto elimina esas rutas del "índice" del repo principal
+- 'rm -rf stock-tienda/.git': ya git dejará de tratar las carpetas como repositorios anidados
