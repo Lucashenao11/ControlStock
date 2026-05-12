@@ -6,7 +6,7 @@
 
 - Se debe instalar nvm (node version manager) se busca en el navegador y se instala la última versión LTS (Long-Term Support), versión más estable que las nuevas.
 - Verificar instalación con 'nvm version'.
-- También es importante verificar que node esté instalado, si no, instalarlo desde el navegador y verificar con node -v, y también verificar npm -v.
+- También es importante verificar que node esté instalado, si no, instalarlo desde el navegador y verificar con node -v, y también verificar npm -v (node package manager).
 
 # Paso 2 - Instalación angular
 
