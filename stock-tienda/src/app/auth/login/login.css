@@ -1,0 +1,143 @@
+/* app.css */
+
+/* Configuración global de la pantalla */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Alinea los textos arriba y el recuadro abajo */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Estilos para los títulos de bienvenida */
+h1 {
+    color: #007bff;
+    margin-bottom: 5px;
+    font-size: 2.2rem;
+}
+
+h2 {
+    color: #555555;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Diseño del recuadro de login con tu clase exacta (Login-box) */
+.Login-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+/* Título interno del recuadro */
+.Login-box h2 {
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Adaptación a tus clases input-user e input-password */
+.input-user, 
+.input-password {
+    margin-bottom: 15px;
+}
+
+.input-user label, 
+.input-password label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.input-user input, 
+.input-password input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Evita que el input se salga del recuadro */
+    font-size: 14px;
+}
+
+/* Efecto visual al hacer clic en los campos */
+.input-user input:focus, 
+.input-password input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botón de ingreso */
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.btn-login:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 40px 0 20px;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-col {
+    margin-bottom: 20px;
+}
+
+.footer-col h3, .footer-col h4 {
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444444;
+    padding-top: 20px;
+    font-size: 14px;
+}
