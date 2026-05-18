@@ -20,7 +20,7 @@
 # Decisiones a la hora de crear la aplicación básica
 
 - Se rechazó el autocompletado, el compartimiento de datos, la propuesta de 'zoneless' application without zone.js y el renderizado (SSR). Todo esto porque apenas estamos aprendiendo, y la mayoría de estas peticiones son para desarrolladores experimentados, especialmente con Angular.
-- Se corre el front con 'ng serve'
+- Se corre el front con 'ng serve' en el directorio stock-tienda
 
 # Paso 4 - Subir proyecto a GitHub
 
