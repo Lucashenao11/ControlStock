@@ -39,3 +39,9 @@ Convertir las carpetas en directorios normales
 
 - 'git rm --cached stock-tienda': esto elimina esas rutas del "índice" del repo principal
 - 'rm -rf stock-tienda/.git': ya git dejará de tratar las carpetas como repositorios anidados
+
+# Actualizar la rama main desde cualquier rama
+
+- 'git checkout main': te lleva a la rama main desde cualquier rama
+- 'git merge <nombre-rama>': Trae los cambios de la rama anterior y los combína con la rama en la que estoy actualmente
+- 'git push origin main': Sube la rama main al repositorio remoto llamado origin
