@@ -45,3 +45,38 @@ Convertir las carpetas en directorios normales
 - 'git checkout main': te lleva a la rama main desde cualquier rama
 - 'git merge <nombre-rama>': Trae los cambios de la rama anterior y los combína con la rama en la que estoy actualmente
 - 'git push origin main': Sube la rama main al repositorio remoto llamado origin
+
+# Creación login.ts
+
+- Se crean variables (user y password) para conectarlas con los inputs del html (se le llama a este proceso two-way-binding) y se hace con [(ngModel)]. Cuando el usuario escribe en el input la variable se actualiza sola. Para usar ngModel, hay que realizar la importación de FormsModule en el .ts (agregarlo tanto en el array de imports como importarlo desde @angular/forms)
+
+- En el .ts vivirán las variables
+- HTML muestra las variables o las recibe -> {{ }}, [(ngModel)] (para el ingreso de credenciales) y *ngIf (mostrar una variable si se cumple una condición)
+
+# Creación login.html
+
+- div es una simple caja contenedora, no se ve, solo se usa para agrupar cosas. Se le da estilos con css, se usa para organizar
+- label es el texto que describirá un campo
+- input es el campo en el que el usuario escribe (type = "text", type = "password")
+- button es literalmente el botón clickeable
+
+# Creación interfaz de usuario (para evitar uso de any)
+
+- mkdir models && touch models/user.interface.ts (esto crea directamente el archivo de la interfaz dentro de una carpeta models, hacerlo desde la terminal estando en src/app)
+
+# Creación servicios
+
+- ng generate service services/auth
+El anterior comando crea dos archivos:
+- auth.spec.ts: sirve para pruebas automatizadas, en este momento se puede ignorar
+- auth.ts: el decorador @Injectable({ providedIn: 'root' }) significa que angular crea una sola instancia de este servicio para toda la aplicación, todos los componentes que lo usen comparten el mismo
+- La idea primaria de este servicio será manejar los usuarios. Por ahora, sin backend, va a simular una lista de usuarios en memoria
+
+# Implementación del servicio Auth en register.ts
+
+- Auth es un servicio, no un componente o un módulo, no va en el array imports del decorador. Ese array solo es para cosas visuales como FormsModule, NgIf, RouterLink, etc.
+
+# Creación componente dashboard (al hacer login, se redigirá allá)
+
+- ng generate component dashboard
+- Registrar la ruta al dashboard en app.routes.ts
