@@ -1,0 +1,51 @@
+h1, h2 {
+    text-align: center;
+}
+
+.card {
+    max-width: 380px;
+    margin: 24px auto;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    display: grid;
+    gap: 6px;
+    font-weight: 600;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+button {
+    margin-top: 8px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error {
+    color: #b91c1c;
+    font-size: 0.9rem;
+}
